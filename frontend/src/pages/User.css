@@ -1,0 +1,134 @@
+/* Auth.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ddffde;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 50px;
+    cursor: pointer;
+}
+
+
+.informacoes-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.informacoes-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 45px;
+}
+
+.informacoes-container p {
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #555;
+}
+
+.informacoes-container p strong {
+    color: #333;
+}
+
+.informacoes-container a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.informacoes-container a:hover {
+    color: #388E3C;
+}
+/* Formulário de edição */
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+  }
+  
+  .edit-form label {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .edit-form input,
+  .edit-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .edit-form input:focus,
+  .edit-form select:focus {
+    outline: none;
+    border-color: #004d61;
+    box-shadow: 0 0 5px rgba(0, 77, 97, 0.2);
+  }
+  
+  .edit-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-form button:first-of-type {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .edit-form button:first-of-type:hover {
+    background-color: #218838;
+  }
+  
+  .edit-form button:last-of-type {
+    background-color: #ffc107;
+    color: #333;
+  }
+  
+  .edit-form button:last-of-type:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    .informacoes-container {
+      padding: 15px;
+    }
+  
+    .edit-form button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }

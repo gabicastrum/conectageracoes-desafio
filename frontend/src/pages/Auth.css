@@ -1,0 +1,63 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* Ocupa toda a altura da tela */
+    background-color: #ffffff;
+    /* Cor de fundo suave */
+    padding: 20px;
+}
+
+.auth-form select::-ms-expand {
+    display: none;
+    /* Remove a seta padrão no IE */
+}
+.logo-login {
+    max-width: 200px;
+    /* Defina o tamanho máximo do logo */
+    margin-bottom: 0px;
+}
+
+.auth-form {
+    width: 500px;
+    /* Largura do formulário */
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.auth-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    /* Cor de fundo verde */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* Estilos para mensagens de erro */
+.auth-form p {
+    color: red;
+    margin-top: 5px;
+    font-size: 0.8em;
+    /* Menor tamanho para mensagens de erro */
+}

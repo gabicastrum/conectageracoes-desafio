@@ -1,0 +1,122 @@
+/* Atividades.css */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+   
+    
+}
+
+.atividades-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centraliza horizontalmente */
+    width: 100%;
+    /* Ocupa 80% da largura da tela */
+    margin: 20px auto;
+    /* Centraliza na página */
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    background-color: #fff;
+    /* Fundo branco (ou ajuste conforme seu tema) */
+}
+
+/* Estilo base */
+.button {
+    font-family: Arial, sans-serif;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Variantes */
+.button.create {
+    background-color: #4CAF50;
+    /* Verde */
+    color: rgb(255, 255, 255);
+}
+
+.button.create:hover {
+    background-color: #388E3C;
+}
+
+.button.search {
+    background-color: #2196F3;
+    /* Azul */
+    color: white;
+}
+
+.button.search:hover {
+    background-color: #1565C0;
+}
+
+.button.reset {
+    background-color: #f44336;
+    /* Vermelho */
+    color: white;
+}
+
+.button.reset:hover {
+    background-color: #d32f2f;
+}
+
+/* Animação ao clicar */
+.button:active {
+    transform: scale(0.95);
+}
+
+
+.filtros-container {
+    display: flex;
+    justify-content: center;
+    /* Centraliza os filtros horizontalmente */
+    gap: 10px;
+    /* Espaçamento entre os filtros */
+    margin-bottom: 20px;
+    /* Espaçamento entre os filtros e a tabela */
+    flex-wrap: wrap;
+    /* Permite que os filtros quebrem em várias linhas se necessário */
+}
+
+.filtros-container>div {
+    /* Estiliza os divs dentro do container de filtros */
+    flex: 1;
+    /* Distribui o espaço igualmente entre os filtros */
+    min-width: 200px;
+    /* Largura mínima para cada filtro */
+}
+
+
+.auth-form select,
+/* Estilos para selects (reaproveitando estilos existentes) */
+.auth-form input {
+    width: 100%;
+    /* Ocupa a largura total do container */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Inclui padding e border no cálculo da largura */
+    margin-bottom: 10px;
+}
+
+/* Estilos para a tabela (reaproveitando estilos existentes) */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #ddddddcc;
+    text-align: left;
+    padding: 8px;
+}
+
+/* ... outros estilos de tabela ... */
