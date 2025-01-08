@@ -1,12 +1,12 @@
 package conectageracao.conectageracao.services;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
-
 public class CalculadoraServiceTest {
-    
+
     @Test
     public void somar() {
         CalculadoraService calculadora = new CalculadoraService();
@@ -36,10 +36,28 @@ public class CalculadoraServiceTest {
     }
 
     @Test
+    public void dividirPorZero() {
+        CalculadoraService calculadora = new CalculadoraService();
+        Exception exception = assertThrows(ArithmeticException.class, () -> {
+            calculadora.dividir(10, 0);
+        });
+        assertEquals("Divisão por zero não é permitida.", exception.getMessage());
+    }
+
+    @Test
     public void raizQuadrada() {
         CalculadoraService calculadora = new CalculadoraService();
         double resultado = calculadora.raizQuadrada(16);
         assertEquals(4, resultado);
+    }
+
+    @Test
+    public void raizQuadradaDeNumeroNegativo() {
+        CalculadoraService calculadora = new CalculadoraService();
+        Exception exception = assertThrows(ArithmeticException.class, () -> {
+            calculadora.raizQuadrada(-4);
+        });
+        assertEquals("Não é possível calcular a raiz quadrada de um número negativo.", exception.getMessage());
     }
 
     @Test
@@ -61,5 +79,14 @@ public class CalculadoraServiceTest {
         CalculadoraService calculadora = new CalculadoraService();
         double resultado = calculadora.modulo(10, 3);
         assertEquals(1, resultado);
+    }
+
+    @Test
+    public void moduloComZero() {
+        CalculadoraService calculadora = new CalculadoraService();
+        Exception exception = assertThrows(ArithmeticException.class, () -> {
+            calculadora.modulo(10, 0);
+        });
+        assertEquals("Divisão por zero não é permitida para calcular o módulo.", exception.getMessage());
     }
 }
