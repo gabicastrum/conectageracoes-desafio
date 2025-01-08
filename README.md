@@ -1,7 +1,3 @@
-# StartDB Grupo 08 - Conecta Gerações
-> Gabriela de Castro Laurindo
-
-> Bruno Wendelstein Xavier
 ## Sobre o Desafio 
 O desafio que nos foi apresentado trouxe à tona um problema relevante: a solidão e o isolamento social entre idosos. Observamos que isso é uma questão crescente, afetando tanto o bem-estar emocional quanto a qualidade de vida dessa geração. Para responder ao desafio, idealizamos a Conecta Gerações, uma aplicação web que promove conexões intergeracionais por meio de atividades e suporte entre jovens e idosos.
 ## Mas como funciona a solução?
