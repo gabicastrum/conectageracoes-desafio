@@ -1,4 +1,4 @@
-package conectageracao.conectageracao.controllers;
+package conectageracao.conectageracao;
 
 import conectageracao.conectageracao.services.CalculadoraService;
 
