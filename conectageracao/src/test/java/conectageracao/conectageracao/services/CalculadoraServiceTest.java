@@ -87,6 +87,13 @@ public class CalculadoraServiceTest {
         Exception exception = assertThrows(ArithmeticException.class, () -> {
             calculadora.modulo(10, 0);
         });
-        assertEquals("Divisão por zero não é permitida para calcular o módulo.", exception.getMessage());
+        assertEquals("Divisão por zero NÃO é permitida para calcular o módulo.", exception.getMessage());
+    }
+
+    @Test
+    public void fatorial() {
+        CalculadoraService calculadora = new CalculadoraService();
+        double resultado = calculadora.fatorial(5);
+        assertEquals(120, resultado);
     }
 }
