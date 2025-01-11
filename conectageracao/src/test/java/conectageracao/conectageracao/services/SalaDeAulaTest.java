@@ -80,4 +80,9 @@ public class SalaDeAulaTest {
 
         assertEquals("Nota {-1.0} inválida", exception.getMessage());
     }
+
+    @Test
+    void verificarSeDoisMaisDoisIgual4() {
+        assertEquals(4, 2+2);
+    }
 }
