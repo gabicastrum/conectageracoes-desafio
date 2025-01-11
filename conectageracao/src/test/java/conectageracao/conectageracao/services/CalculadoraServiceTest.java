@@ -96,4 +96,11 @@ public class CalculadoraServiceTest {
         double resultado = calculadora.fatorial(5);
         assertEquals(120, resultado);
     }
+
+    @Test
+    public void fatorialDeZero() {
+        CalculadoraService calculadora = new CalculadoraService();
+        double resultado = calculadora.fatorial(0);
+        assertEquals(1, resultado);
+    }
 }
